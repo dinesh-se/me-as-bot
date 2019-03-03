@@ -10,7 +10,7 @@ import { MessageItemComponent } from '../message-item/message-item.component';
 export class MessageListComponent implements OnInit, AfterViewInit {
 
   @Input('messages')
-  private messages: Message[];
+  messages: Message[];
 
   @ViewChild('chatlist', { read: ElementRef }) chatList: ElementRef;
   @ViewChildren(MessageItemComponent, { read: ElementRef }) chatItems: QueryList<MessageItemComponent>;
@@ -24,7 +24,7 @@ export class MessageListComponent implements OnInit, AfterViewInit {
     });
   }
 
-  private scrollToBottom(): void {
+  scrollToBottom(): void {
     try {
       this.chatList.nativeElement.scrollTop = this.chatList.nativeElement.scrollHeight;
     }

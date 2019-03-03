@@ -38,3 +38,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# AWS files
+/awscli-bundle.zip
+/awscli-bundle
