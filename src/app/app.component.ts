@@ -11,10 +11,10 @@ export class AppComponent {
   public messages : Message[];
 
 
-  constructor(){
+  constructor() {
     this.message = new Message('', 'assets/images/user.png');
     this.messages = [
-      new Message('Welcome to chatbot universe', 'assets/images/bot.png', new Date())
+      new Message('Hi, Welcome to my site. I\'m Dinesh Haribabu in bot form. You can ask me any questions about my professional experience. I\'ll try my best to answer.', 'assets/images/bot.png', new Date())
     ];
   }
 }
