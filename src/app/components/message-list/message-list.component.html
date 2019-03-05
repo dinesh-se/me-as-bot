@@ -1,5 +1,2 @@
-<div class="chatlist" #chatlist>
-  <ul class="list-group">
-    <message-item *ngFor="let msg of messages" [message]="msg"></message-item>
-  </ul>
-</div>
+<message-item *ngFor="let msg of messages" [message]="msg" [ngClass]="{'flex-reverse': msg.isBot === false}">
+</message-item>

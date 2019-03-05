@@ -1,4 +1,18 @@
-<div  class="chatform">
-  <message-list [messages]="messages"></message-list>
-  <message-form [message]="message" [messages]="messages"></message-form>
+<div class="container">
+  <div class="columns col-gapless">
+    <div class="column col-4 col-xs-12">
+      <div class="panel panel-dimensions">
+        <div class="panel-header bg-primary">
+          <div class="panel-title h6">Chat with my bot</div>
+        </div>
+        <div class="panel-body" #scrollMe>
+          <message-list [messages]="messages"></message-list>
+        </div>
+        <div class="panel-footer">
+          <message-form [message]="message" [messages]="messages"></message-form>
+        </div>
+      </div>
+    </div>
+    <div class="column col-6"></div>
+  </div>
 </div>

@@ -1,23 +1,24 @@
-.message {
-  font-size: 1em;
-  font-style: italic;
-  font-weight: 400;
+.avatar {
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
-.timeform {
-  float: left;
-  width: 100%;
-
-  i {
-    margin-left: 20px;
-  }
-
-  .timestamp{
-    font-size: 0.6em;
-  }
+.tile {
+  width: 90%;
+  margin: 0.75rem 0;
+  max-width: fit-content;
 }
 
-.avatar{
-  width: 50px;
-  margin-right: 20px;
+.tile-icon {
+  margin-right: 0.5rem;
+}
+
+.tile-content {
+  border-radius: 2.8rem;
+}
+
+.tile-subtitle {
+  padding: 0.5rem 1.5rem;
+  margin: 0;
+  font-size: 0.7rem;
 }

@@ -1,9 +1,14 @@
-<li class="list-group-item">
-  <img [src]="message.avatar" class="avatar"/>
-  <div class="message">
-    {{message.content}}
-  </div>
-  <div class="timeform">
-    <i class="fa fa-clock-o" aria-hidden="true"></i> <span class="timestamp">at {{message.timestamp | date : 'dd/MM/yyyy' }}</span>
-  </div>
-</li>
+<div class="tile">
+  <!-- <div [ngClass]="{'float-right': message.isBot === false}"> -->
+    <div class="tile-icon" *ngIf="message.avatar">
+      <figure class="avatar">
+        <img [src]="message.avatar" />
+      </figure>
+    </div>
+    <div class="tile-content" [ngClass]="(message.isBot ? 'bg-primary' : 'bg-gray')">
+      <p class="tile-subtitle">
+        {{message.content}}
+      </p>
+    </div>
+  <!-- </div> -->
+</div>

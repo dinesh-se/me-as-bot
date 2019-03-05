@@ -7,32 +7,13 @@ import { MessageItemComponent } from '../message-item/message-item.component';
   templateUrl: './message-list.component.html',
   styleUrls: ['./message-list.component.scss']
 })
-export class MessageListComponent implements OnInit, AfterViewInit {
+export class MessageListComponent implements OnInit {
 
   @Input('messages')
   messages: Message[];
 
-  @ViewChild('chatlist', { read: ElementRef }) chatList: ElementRef;
-  @ViewChildren(MessageItemComponent, { read: ElementRef }) chatItems: QueryList<MessageItemComponent>;
-
   constructor() { }
-
-  ngAfterViewInit() {
-    this.chatItems.changes.subscribe(elements => {
-      // console.log('messsage list changed: ' + this.messages.length);
-      this.scrollToBottom();
-    });
-  }
-
-  scrollToBottom(): void {
-    try {
-      this.chatList.nativeElement.scrollTop = this.chatList.nativeElement.scrollHeight;
-    }
-    catch (err) {
-      console.log('Could not find the "chatList" element.');
-    }
-  }
-
+  
   ngOnInit() {
   }
 
