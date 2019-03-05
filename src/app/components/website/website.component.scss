@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+.social-links .social-icon,
+.skills .skill-icon {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.social-links .social-icon:hover,
+.skills .skill-icon:hover {
+  transform: scale(1.5);
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  border-top: 5px solid #09384e;
+  background: #f9f9f9;
+  text-align: center;
+  color: #070707;
+  line-height: 1rem;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  text-align: center;
+}
+@media (min-width: 1260px) {
+  main {
+    max-width: 960px;
+  }
+}
+
+.page-container {
+  padding: 5em 0;
+}
+@media (max-width: 1260px) {
+  .page-container {
+    padding: 3em 0;
+  }
+}
+
+.page-header .display-picture {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid;
+}
+.page-header .display-picture:hover {
+  -webkit-animation: flash ease-in 0.5s;
+  animation: flash ease-in 0.5s;
+}
+@media (max-width: 1260px) {
+  .page-header .display-picture {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+.page-header .intro {
+  font-size: 1.2rem;
+  margin: 0.75rem 0;
+}
+.page-header .intro .name {
+  font-family: "Oswald", sans-serif;
+  color: #09384e;
+  letter-spacing: 2px;
+  line-height: 1.2rem;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+.social-links a {
+  text-decoration: none;
+  display: inline-block;
+}
+.social-links .social-icon {
+  height: 1rem;
+  margin-right: 1rem;
+}
+
+.skillset {
+  padding-top: 2.5rem;
+}
+@media (max-width: 1260px) {
+  .skillset {
+    padding: 1rem;
+  }
+}
+
+.section {
+  display: block;
+  border-right: 1px dotted #ccc;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  line-height: 2rem;
+}
+.section:last-child {
+  border: unset;
+}
+.section .section-header {
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 1260px) {
+  .section {
+    margin: 1.2rem auto;
+    padding: 0;
+    border: none;
+  }
+}
+@media (min-width: 1260px) {
+  .section {
+    display: inline-block;
+  }
+}
+
+.skills .skill-icon {
+  height: 1.2rem;
+  margin-right: 1rem;
+}
+.skills .skill-icon:last-child {
+  margin: 0;
+}

@@ -1,3 +1,7 @@
+.container {
+  padding: 0;
+}
+
 .panel-dimensions {
   height: 100vh;
 }
@@ -8,4 +12,8 @@
 
 .footer {
   padding: 1rem;
+}
+
+.reverse-order {
+  flex-direction: row-reverse;
 }

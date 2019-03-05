@@ -8,13 +8,15 @@ import { MessageItemComponent } from './components/message-item/message-item.com
 import { MessageFormComponent } from './components/message-form/message-form.component';
 import { DialogflowService } from './services/dialogflow.service';
 import { HttpModule } from '@angular/http';
+import { WebsiteComponent } from './components/website/website.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MessageListComponent,
     MessageItemComponent,
-    MessageFormComponent
+    MessageFormComponent,
+    WebsiteComponent
   ],
   imports: [
     BrowserModule,
